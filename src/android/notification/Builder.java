@@ -128,7 +128,7 @@ public final class Builder {
                 .setOnlyAlertOnce(false)
                 .setChannelId(options.getChannel())
                 .setContentTitle(options.getTitle())
-				.setStyle(NotificationCompat.BigTextStyle().bigText(options.getText()))
+				.setStyle(new NotificationCompat.BigTextStyle().bigText(options.getText()))
                 .setTicker(options.getText())
                 .setNumber(options.getNumber())
                 .setAutoCancel(options.isAutoClear())
